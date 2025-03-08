@@ -13,7 +13,6 @@ footer{
 /*Fim Header*/
 
 /*Inicio main-principal*/
-
 .main-princ{
   background-color: #F2EFE7;
 }
@@ -31,6 +30,9 @@ footer{
 }
 .l{
   color: #2973B2;
+}
+.tab{
+  margin-left: 2rem;
 }
 /*Fim main-principal*/
 
