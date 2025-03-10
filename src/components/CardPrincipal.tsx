@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface PropsCard{
     temp:number | null;
     veloc:number | null;
@@ -12,7 +13,7 @@ export default function CardPrincipal(props:PropsCard){
             <div className="h-full w-full md:flex md:flex-row sm:flex sm:flex-col justify-between items-center">
                 
                 <div className="h-full float-left">
-                    <img className="h-full" src="/img/foziguacu.jpeg" alt="foz-iguacu" />
+                    <Image className="h-full" src="/img/foziguacu.jpeg" alt="foz-iguacu" />
                 </div>
                 <div className="h-11/12 w-full ">
                     <table>
