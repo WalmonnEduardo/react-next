@@ -14,9 +14,9 @@ export default function Cidade() {
   const [velocr, setVelocr] = useState<number | null>(null);
   const [sensacaor, setSensacaor] = useState<number | null>(null);  
   useEffect(() => {
-    let cidade1: string = "Natal";
-    let cidade3: string = "São_Paulo";
-    let cidade2: string = "Rio_de_Janeiro";
+    const cidade1: string = "Natal";
+    const cidade3: string = "São_Paulo";
+    const cidade2: string = "Rio_de_Janeiro";
     fetch(`https://api.weatherapi.com/v1/current.json?key=ffb45b876e37459fbe1145531250503&q=${cidade1}&aqi=no`)
       .then(response => response.json())
       .then(data => {
