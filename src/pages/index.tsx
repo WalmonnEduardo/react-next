@@ -4,12 +4,11 @@ import Footer from "@/components/Footer";
 import CardPrincipal from "@/components/CardPrincipal";
 
 export default function Home() {
-  let cidade: string = "Foz_do_Iguaçu";
   const [temp, setTemp] = useState<number | null>(null);
   const [veloc, setVeloc] = useState<number | null>(null);
   const [sensacao, setSensacao] = useState<number | null>(null);  
   useEffect(() => {
-    let cidade: string = "Foz_do_Iguaçu";
+    const cidade: string = "Foz_do_Iguaçu";
     fetch(`https://api.weatherapi.com/v1/current.json?key=ffb45b876e37459fbe1145531250503&q=${cidade}&aqi=no`)
       .then(response => response.json())
       .then(data => {
